@@ -146,7 +146,6 @@ header .btn{
 }
 header .btn button{
     border-radius: 5px;
-    border: 0.5px solid blue;
     background-color:dodgerblue;
     width: 150px;
     padding: 10px;
