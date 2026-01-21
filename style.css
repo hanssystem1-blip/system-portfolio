@@ -115,7 +115,7 @@ header div{
     letter-spacing: 2px;
     color: white;
 }
-header div span, section h1{
+header div span{
     color: dodgerblue;
 }
 header div h1 {
@@ -216,8 +216,19 @@ section h1{
     font-size: 45px;
     font-weight: bold;
     margin-top: 20px;
+    border-bottom: 5px solid dodgerblue;
+    padding-bottom: 20px;
 }
+input[type="button"]{
+    background-color: dodgerblue;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+}
+
+
 /* *************************** */
+
 
 /* partie responsive */
 
@@ -283,6 +294,7 @@ flex-wrap: wrap;}
 .services-card .card{
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
 }
 /* @keyframes aside {
     100%{
