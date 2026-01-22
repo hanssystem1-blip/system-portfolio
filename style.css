@@ -34,6 +34,7 @@ body{
 }
 nav{
     background-color: white;
+    border-radius: 5px;
     padding: 1rem ;
     position: fixed;
     width: 100%;
