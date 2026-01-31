@@ -23,6 +23,7 @@ html {
   }
 body{
     max-width: 100%;
+    position: absolute;
 }
 
 /* barre de navigation */
@@ -248,6 +249,7 @@ input[type="button"]:hover{
     padding: 20px;
     box-shadow: 0.3px 0.3px 2px darkgray;
 max-height: auto;
+border: none;
 animation: aside 5s ease-in;
     animation-direction: reverse;
     background-color: rgba(155, 159, 189,0.2);
@@ -302,6 +304,37 @@ footer{
     padding-top: 50px;
     justify-content: center;
 }
+
+.star{
+    /* background-color: yellow; */
+    color: yellow;
+    font-size: 30px;
+}
+.etoile{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.conn{
+    color: red;
+}
+.call{
+    color: green;
+}
+
+
+footer a{
+    color: #000;
+    /* padding: 10px; */
+    margin-left: 10px;
+    font-size: 20px;
+    justify-content: space-evenly;
+}
+/* .icon{
+    display: flex;
+} */
 /* *************************** */
 
 
