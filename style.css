@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
-    font-family: tahoma sans-serif;
 }
 
 html {
@@ -25,7 +28,9 @@ html::-webkit-scrollbar-thumb {
 
 body {
     max-width: 100%;
-    position: absolute;
+    /* position: absolute; */
+    font-family: "Open Sans",sans-serif;
+
 }
 
 /* barre de navigation */
@@ -48,6 +53,8 @@ nav {
     padding-top: 1rem;
     position: fixed;
     width: 100%;
+    font-family: "Playfair Display",serif;
+
     z-index: 1000;
     box-shadow: 0px 0px 5px 0px gray;
     display: flex;
@@ -117,7 +124,7 @@ header {
     padding-top: 100px;
     height: auto;
     /* border-top: 5px solid black ; */
-    background-image: url(img/favicon.jpg);
+    background-image: url(img/header.png);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
