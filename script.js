@@ -7,10 +7,15 @@ $(document).ready(function () {
         // $('article').toggleClass('rot');
     });
 });
+$(document).ready(function () {
+    $('.burger').click(function () {
+        $('ul,button').toggleClass('present');
+    })
+})
 function rotate() {
     rot = document.getElementById('change')
-    rot.style.transform = 'rotate(360deg)';
-    rot.style.transition = 'transform  1s ease-in-out';
+    rot.style.transform = 'rotate(180deg)';
+    rot.style.transition = 'transform  1s ease-out';
     // document.getElementById('change').addEventListener(
     //     "click", () => {
     //         n=100;

@@ -27,16 +27,22 @@ html::-webkit-scrollbar-thumb {
     border-radius: 5rem;
 }
 
-body{
+body {
     max-width: 100%;
-    /* position: absolute; */
-    /* font-family: "Open Sans",sans-serif; */
+    position: absolute;
+    /* font-family: "Open Sans", sans-serif; */
     /* background-color: #111; */
-    /* transition: all 300ms ease-in; */
-
+    transition: all 300ms ease-in;
+    padding: 0;
+    margin: 0;
 }
 
 /* barre de navigation */
+
+.menu {
+    display: none;
+}
+
 
 .logo {
     height: 60px;
@@ -47,25 +53,28 @@ body{
 .dark {
     font-size: 25px;
     margin-right: 20px;
-    /* color: #000; */
 }
-.change{
+
+.change {
     color: #fff;
 }
-.blanc{
+
+.blanc {
     color: #fff;
 }
+
 .fond {
-    background-color:  rgba(155, 159, 189, 0.3);
+    background-color: rgba(155, 159, 189, 0.3);
 
 }
+
 /* .option div{
     color: #000;
-}
-.option div .dark{
+} */
+/* .option div .dark{
     color: white;
 } */
- /* .rot{
+/* .rot{
     transform: rotate(360deg);
     transition: transform 1s ease ;
     animation: rotate 1s  alternate backwards;
@@ -79,30 +88,30 @@ body{
     }
  } */
 nav {
-    /* background-color: rgba(62, 158, 255, 0.9); */
-    /* border-radius: 10px; */
     background-color: #fff;
     padding-top: 1rem;
     position: fixed;
     width: 100%;
-    font-family: "Playfair Display",serif;
-    /* background-color: #000; */
+    font-family: "Playfair Display", serif;
     z-index: 1000;
     box-shadow: 0px 0px 5px 0px gray;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 nav ul {
     display: flex;
     font-size: 25px;
-    font-weight: 600;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    font-size: 25px;
 }
 
 nav ul li {
     list-style-type: none;
-    margin-right: 25px;
+    padding: 20px;
 }
 
 nav ul li a:hover {
@@ -114,27 +123,26 @@ nav ul li a:hover {
 
 nav ul li a {
     text-decoration: none;
-    justify-content: space-between;
     padding-bottom: 5px;
     text-transform: capitalize;
     color: black;
     cursor: pointer;
+    font-size: 30px;
 }
 
 nav div button a {
     text-decoration: none;
     color: black;
 }
-div p{
-    font-family: 'Montserrat',sans-serif;
+
+div p {
+    font-family: 'Montserrat', sans-serif;
 }
-.option{
-    display: flex;
-}
-.active{
+.active {
     background-color: rgb(0, 20, 40);
     transition: all 400ms cubic-bezier(0.530, 0.480, 0.125, 0.810);
 }
+
 .option button {
     margin-right: 10px;
     border-radius: 15px;
@@ -147,8 +155,10 @@ div p{
     font-size: 15px;
     cursor: pointer;
     
+
 }
-.option button:hover{
+
+.option button:hover {
     background-color: rgba(62, 158, 255, 0.5);
 
 }
@@ -187,12 +197,15 @@ header div h1 {
     font-size: 45px;
     font-weight: bold;
 }
-div h1{
-    font-family: "Playfair Display",serif;
+
+div h1 {
+    font-family: "Playfair Display", serif;
 }
-div h3{
-    font-family: "Open Sans",sans-serif;
+
+div h3 {
+    font-family: "Open Sans", sans-serif;
 }
+
 header div p {
     letter-spacing: 2px;
     margin-top: 30px;
@@ -281,7 +294,8 @@ section .services-card .card:hover {
     align-items: center;
     padding: 10px;
 }
-p ion-icon{
+
+p ion-icon {
     color: #2563EB;
     font-size: 20px;
     padding-bottom: 0px;
@@ -334,7 +348,7 @@ input[type="button"]:hover {
     display: flex;
     width: 60%;
     outline: none;
-    background-color:rgba(175, 175, 175, 0.1);
+    background-color: rgba(175, 175, 175, 0.1);
     margin-bottom: 10px;
     margin-top: 50px;
     margin-left: 15em;
@@ -357,9 +371,11 @@ aside div p {
     margin: 10px 70px;
     text-align: center;
 }
-img{
+
+img {
     border-radius: 5px;
 }
+
 .contact button {
     /* padding: 10px; */
     /* align-items: space-between; */
@@ -414,14 +430,16 @@ img{
     text-align: center;
     position: relative;
 }
-.container img{
+
+.container img {
     border-radius: 10px;
     margin-top: 15px;
     width: 100%;
-    
+
 }
+
 .container img:hover {
-    transform: scale(1.1,1.1);
+    transform: scale(1.1, 1.1);
     /* transform: skew(-1deg,-1deg); */
 }
 
@@ -453,6 +471,7 @@ footer {
 .conn {
     color: red;
 }
+
 /* 
 .call {
     color: green;
@@ -470,40 +489,64 @@ footer a {
     display: flex;
 } */
 /* *************************** */
+/* menu bruger */
 
 
 /* partie responsive */
 
 
 @media all and (max-width: 899px) {
-    .logo {
+    .menu {
+        display: block;
+        width: auto;
+        float: right;
+        padding: 0 10px;
+    }
+
+    .burger {
+        cursor: pointer;
+        color: #000;
+        /* margin-left: -30px;     */
+        font-size: 30px;
+    }
+    nav div ul {
         display: none;
     }
 
-    nav ul {
+    /* nav button {
+        display: none;
+    } */
+
+    .present {
+        display: block;
+    }
+
+    .logo {
+        display: block;
+    }
+
+    /* nav ul {
         display: flex;
-        /* flex-basis: 200; */
-        /* flex-direction: column; */
-        /* padding-top: 0; */
         margin-top: 30px;
         flex-wrap: wrap;
-        /* margin-right: 0px; */
         padding: 0px 10px;
-    }
-    nav ul li a{
+    } */
+
+    /* nav ul li a {
         font-size: 20px;
-        
-    }
+        display: flex;
+
+    } */
+
     nav {
-        /* background-color: rgba(172, 172, 172, 0.8); */
         background-color: #fff;
-        flex-direction: column;
         position: fixed;
         padding-top: 50px;
         margin-top: 0;
-        height: 150px;
-        /* margin-left: 30px; */
-        /* width: 100%; */
+        height: auto;
+        display: block;
+        /* flex-direction: column; */
+        width: 100%;
     }
 
     nav div {
@@ -512,11 +555,20 @@ footer a {
         width: auto;
         padding: 0;
         margin-left: 0;
-        /* flex-direction: column; */
     }
-    .dark{
+
+    .dark {
         margin-right: 10px;
         font-size: 15px;
+        position: absolute;
+        top: 5em;
+        left: 7em;
+    }
+    .option{
+        position: absolute;
+    top: 20px;
+    left: 6em;
+    /* flex-direction: column; */
     }
     .option button {
         margin-right: 10px;
@@ -526,20 +578,21 @@ footer a {
         width: auto;
         height: auto;
         text-align: center;
+        flex-direction: column;
         text-transform: capitalize;
         font-size: 15px;
         cursor: pointer;
         margin-bottom: 15px;
+        
     }
 
-    nav ul li {
+    /* nav ul li {
         list-style-type: none;
-        /* margin-right: 10px; */
         text-align: center;
         margin-bottom: 10px;
         flex-grow: 1;
         flex-basis: 50px;
-    }
+    } */
 
     header div {
         margin-top: 100px;
@@ -548,28 +601,31 @@ footer a {
         width: 100%;
         padding-top: 10px;
     }
-    header div h1 {
-    letter-spacing: 2px;
-    text-align: center;
-    font-size: 30px;
-    /* font-weight: bold; */
-}
 
-header div p {
-    letter-spacing: 1px;
-    margin-top: 30px;
-    text-align: center;
-    font-style: italic;
-    font-weight: 500;
-    font-size: 20px;
-    
-}
+    header div h1 {
+        letter-spacing: 2px;
+        text-align: center;
+        font-size: 30px;
+        /* font-weight: bold; */
+    }
+
+    header div p {
+        letter-spacing: 1px;
+        margin-top: 30px;
+        text-align: center;
+        font-style: italic;
+        font-weight: 500;
+        font-size: 20px;
+
+    }
+
     header {
-    margin: 30px 0px;
-    padding-top: 50px;
-    width: 100%;
-    height: auto;
-}
+        margin: 30px 0px;
+        padding-top: 50px;
+        width: 100%;
+        height: auto;
+    }
+
     header .btn {
         width: 100%;
         display: flex;
@@ -588,6 +644,7 @@ header div p {
         margin-bottom: 15px;
         align-items: center;
     }
+
     /* header div button a{
         padding: 0;
     } */
@@ -609,7 +666,8 @@ header div p {
         margin: 0px 0px;
         padding-top: 10px;
     }
-/* aside div p {
+
+    /* aside div p {
     color: black;
     text-align: left;
     font-size: 30px;
@@ -661,7 +719,7 @@ header div p {
         flex-wrap: wrap;
         margin-left: 0;
         width: 80%;
-        margin-left:20px ;
+        margin-left: 20px;
     }
 
     .container div {
