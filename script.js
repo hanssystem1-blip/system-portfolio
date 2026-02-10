@@ -1,21 +1,37 @@
-$(document).ready(function () {
-    $('.dark').click(function () {
-        $('footer').toggleClass('fond');
-        $('body,nav').toggleClass('active');
-        $('ion-icon').toggleClass('change');
-        $('header,section,p').toggleClass('blanc');
-        // $('article').toggleClass('rot');
-    });
+// $(document).ready(function () {
+//     $('.dark').click(function () {
+//         $('footer').toggleClass('fond');
+//         $('body,nav').toggleClass('active');
+//         $('ion-icon').toggleClass('change');
+//         $('header,section,p').toggleClass('blanc');
+//     });
+// });
+// $(document).ready(function () {
+//     $('.burger').click(function () {
+//         $('ul,button').toggleClass('present');
+//     })
+// })
+ fond =document.getElementById("change");
+ navi =document.querySelector("nav");
+//  burger = document.querySelector("ul");
+ all=document.querySelector("*");
+rot =document.getElementById("change");
+fond.addEventListener("click",()=>{
+    navi.classList.toggle("active");
+    rot.classList.toggle("rotate");
+    all.classList.toggle("active");
+    // burger.classList.;
+    
 });
-$(document).ready(function () {
-    $('.burger').click(function () {
-        $('ul,button').toggleClass('present');
-    })
+aff=document.querySelector("ul");
+menu=document.getElementById("burger");
+menu.addEventListener("click",()=>{
+    aff.classList.toggle("present");
 })
 function rotate() {
-    rot = document.getElementById('change')
-    rot.style.transform = 'rotate(180deg)';
-    rot.style.transition = 'transform  1s ease-out';
+    // rot = document.getElementById('change')
+    // rot.style.transform = 'rotate(180deg)';
+    // rot.style.transition = 'transform  1s ease-out';
     // document.getElementById('change').addEventListener(
     //     "click", () => {
     //         n=100;
