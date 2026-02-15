@@ -51,7 +51,7 @@ input[type="text"],input[type="Email"]{
     border: none;
     outline: none;
     padding: 0 20px 0 5px;
-    /* color: #fff */
+    color: #fff
 } 
 input::placeholder{
     color: #fff;
