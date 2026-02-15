@@ -63,11 +63,11 @@ body {
 .blanc {
     color: #fff;
 }
-
+*/
 .fond {
     background-color: rgba(155, 159, 189, 0.3);
 
-} */
+} 
 
 /* .option div{
     color: #000;
@@ -526,19 +526,21 @@ footer a {
         display: none;
     }
 
-    /* nav button {
+    nav button {
         display: none;
-    } */
+        /* position: relative; */
+    }
 
     .present {
         display: block;
-        backdrop-filter: blur(20px);
-        background-color: white;
+        /* width: 50%; */
+        float: right;
+        /* backdrop-filter: blur(20px); */
     }
     ul.present{
-        margin-left: 8em;
-        text-align: center;
-        justify-content: center;
+        /* margin-left: 8em; */
+        text-align: right;
+        justify-content: right;
         align-items: center;
         color: white;
     }
@@ -571,7 +573,7 @@ footer a {
     }
 
     nav div {
-        display: flex;
+        /* display: flex; */
         height: auto;
         width: auto;
         padding: 0;
@@ -583,14 +585,13 @@ footer a {
         font-size: 15px;
         position: absolute;
         top: 5em;
-        left: 7em;
+        /* left: 7em; */
     }
-    .option{
+    /* .option{
         position: absolute;
     top: 20px;
     left: 6em;
-    /* flex-direction: column; */
-    }
+    } */
     .option button {
         margin-right: 10px;
         border-radius: 15px;
@@ -599,7 +600,8 @@ footer a {
         width: auto;
         height: auto;
         text-align: center;
-        flex-direction: column;
+        /* flex-direction: column; */
+        
         text-transform: capitalize;
         font-size: 15px;
         cursor: pointer;

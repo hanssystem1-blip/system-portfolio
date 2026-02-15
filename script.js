@@ -19,6 +19,8 @@ rot =document.getElementById("change");
 fond.addEventListener("click",()=>{
     navi.classList.toggle("active");
     rot.classList.toggle("rotate");
+    document.querySelector("footer").classList.toggle("fond");
+    document.querySelector("ion-icon").classList.toggle("active");
     all.classList.toggle("active");
     // burger.classList.;
     
@@ -27,6 +29,7 @@ aff=document.querySelector("ul");
 menu=document.getElementById("burger");
 menu.addEventListener("click",()=>{
     aff.classList.toggle("present");
+    document.querySelector("nav .option").classList.toggle("present");
 })
 function rotate() {
     // rot = document.getElementById('change')
