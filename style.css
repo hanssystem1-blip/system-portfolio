@@ -30,8 +30,6 @@ html::-webkit-scrollbar-thumb {
 body {
     max-width: 100%;
     position: absolute;
-    /* font-family: "Open Sans", sans-serif; */
-    /* background-color: #111; */
     transition: all 300ms ease-in;
     padding: 0;
     margin: 0;
@@ -55,40 +53,6 @@ body {
     font-size: 25px;
     margin-right: 20px;
 }
-
-/* .change {
-    color: #fff;
-}
-
-.blanc {
-    color: #fff;
-}
-*/
-.fond {
-    background-color: rgba(155, 159, 189, 0.3);
-
-} 
-
-/* .option div{
-    color: #000;
-} */
-/* .option div .dark{
-    color: white;
-} */
-/* .rot{
-    transform: rotate(360deg);
-    transition: transform 1s ease ;
-    animation: rotate 1s  alternate backwards;
- }
- @keyframes rotate {
-    100%{
-        transform: rotate(360deg);
-    }
-    0%{
-        transform: rotate(0deg);
-    }
- } */
-
 nav {
     background-color: rgba(255, 255, 255, 0.9);
     padding-top: 1rem;
@@ -101,7 +65,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    animation: nav 800ms ease-out ;
 }
 nav ul {
     display: flex;
@@ -116,6 +80,8 @@ nav ul {
 nav ul li {
     list-style-type: none;
     padding: 20px;
+    animation: lien 1s  ease-in;
+
 }
 
 nav ul li a:hover {
@@ -168,7 +134,7 @@ div p {
     text-transform: capitalize;
     font-size: 15px;
     cursor: pointer;
-    
+    animation: button 1s ease-in ;
 
 }
 
@@ -185,7 +151,6 @@ header {
     margin: 50px 0px;
     padding-top: 100px;
     height: auto;
-    /* border-top: 5px solid black ; */
     background-image: url(img/header.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -255,7 +220,7 @@ header .btn {
 header .btn button {
     border-radius: 5px;
     background-color: rgba(62, 158, 255, 0.9);
-    width: 150px;
+    min-width: 200px;
     padding: 10px;
     margin-bottom: 20px;
     margin-right: 20px;
@@ -276,22 +241,28 @@ section img {
 }
 
 /* partie servise digitale */
-
 section .services-card {
     display: flex;
     width: 100%;
     justify-content: space-evenly;
     border-radius: 5px;
-    margin: 20px 10px;
+    margin: 40px 0px;
+    padding: 0 ;
+    flex-wrap: wrap;
+    gap: 20px;
+    animation: services 1s linear 2s alternate both;
 
 }
 
 section .services-card .card {
     display: flex;
     flex-direction: column;
-    width: 250px;
+    width:250px;
+    flex-grow: 0.1;
+    flex-basis: 20;
     border-radius: 5px;
     padding: 20px;
+    margin-bottom: 10px;
     box-shadow: 0.3px 0.3px 2px darkgray;
 }
 
@@ -299,7 +270,6 @@ section .services-card .card:hover {
     transform: translatey(-5px);
     box-shadow: 2px 2px 10px rgba(62, 158, 255, 0.7);
     transition: all 600ms ease-in-out;
-    /* background-color: rgba(150, 10, 255, 0.1); */
 }
 
 .card p {
@@ -337,10 +307,7 @@ input[type="button"] {
     font-weight: 700;
     font-size: 15px;
     color: #fff;
-    /* position: static; */
-    /* color: #fff; */
     text-transform: capitalize;
-    /* text-overflow: clip; */
 }
 
 input[type="button"]:hover {
@@ -374,7 +341,6 @@ input[type="button"]:hover {
     border: none;
     animation: aside 5s ease-in;
     animation-direction: reverse;
-    /* background-color: rgba(155, 159, 189, 0.2); */
 
 }
 
@@ -391,8 +357,6 @@ img {
 }
 
 .contact button {
-    /* padding: 10px; */
-    /* align-items: space-between; */
     border-radius: 5px;
     background-color: rgba(62, 158, 255, 0.9);
     width: auto;
@@ -423,16 +387,24 @@ img {
     justify-content: space-evenly;
     width: 80%;
 }
+.container div ion-icon{
+    padding-top: 30px ;
+    position: relative;
+    font-size: 40px;
+    color: #2563EB;
+    opacity: 0.7;
+}
+.container div ion-icon:hover{
+       transform: scale(1.5, 1.5);
 
+}
 .container {
     background-color: rgba(175, 175, 175, 0.2);
-    border-radius: 5px;
-    width: 90%;
-    margin-left: 50px;
-    margin-top: 20px;
+    width: 100%;
     display: flex;
     gap: 30px;
-    padding: 30px;
+    padding: 30px 0px;
+    justify-content: center;
 
 }
 
@@ -441,6 +413,7 @@ img {
     border-radius: 10px;
     padding: 20px;
     align-items: center;
+    width: 350px;
     text-align: center;
     position: relative;
 }
@@ -454,7 +427,6 @@ img {
 
 .container img:hover {
     transform: scale(1.1, 1.1);
-    /* transform: skew(-1deg,-1deg); */
 }
 
 /* petit bas de page simple */
@@ -468,44 +440,15 @@ footer {
     justify-content: center;
     border-top: 2px solid rgba(62, 158, 255, 0.9);
 }
-
-/* .star {
-    background-color: yellow;
-    color: yellow;
-    font-size: 30px;
-} */
-
-/* .etoile{
-    display: flex;
-    margin-top: 20px;
-    justify-content: space-evenly;
-    align-items: center;
-
-} */
 .conn {
     color: red;
 }
-
-/* 
-.call {
-    color: green;
-} */
-
 footer a {
     color: #000;
-    /* padding: 10px; */
     margin-left: 10px;
     font-size: 20px;
     justify-content: space-evenly;
 }
-
-/* .icon{
-    display: flex;
-} */
-/* *************************** */
-/* menu bruger */
-
-
 /* partie responsive */
 
 
@@ -519,7 +462,6 @@ footer a {
     .burger {
         cursor: pointer;
         color: #000;
-        /* margin-left: -30px;     */
         font-size: 30px;
     }
     nav div ul {
@@ -528,52 +470,47 @@ footer a {
 
     nav button {
         display: none;
-        /* position: relative; */
+    }
+    nav button .present{
+        display: block;
     }
 
     .present {
         display: block;
-        /* width: 50%; */
         float: right;
-        /* backdrop-filter: blur(20px); */
+        padding: 0;
+        margin: 0;
+        
     }
     ul.present{
-        /* margin-left: 8em; */
-        text-align: right;
-        justify-content: right;
-        align-items: center;
-        color: white;
+        margin-left:10px;
+        padding: 0;
+        text-align: center;
     }
     .logo {
         display: block;
     }
-
-    /* nav ul {
-        display: flex;
-        margin-top: 30px;
-        flex-wrap: wrap;
-        padding: 0px 10px;
-    } */
-
-    /* nav ul li a {
+    .present li a{
+        padding-right: 10px;
+        margin: 0px 10px;
         font-size: 20px;
-        display: flex;
-
-    } */
+    }
+    .present li {
+        padding: 5px 0px;
+        margin: 0;
+        font-size: 15px;
+    }
 
     nav {
         background-color: #fff;
         position: fixed;
-        padding-top: 50px;
         margin-top: 0;
         height: auto;
         display: block;
-        /* flex-direction: column; */
         width: 100%;
     }
 
     nav div {
-        /* display: flex; */
         height: auto;
         width: auto;
         padding: 0;
@@ -581,17 +518,11 @@ footer a {
     }
 
     .dark {
-        margin-right: 10px;
         font-size: 15px;
         position: absolute;
-        top: 5em;
-        /* left: 7em; */
+        top: 3em;
+        left: 7em;
     }
-    /* .option{
-        position: absolute;
-    top: 20px;
-    left: 6em;
-    } */
     .option button {
         margin-right: 10px;
         border-radius: 15px;
@@ -600,7 +531,6 @@ footer a {
         width: auto;
         height: auto;
         text-align: center;
-        /* flex-direction: column; */
         
         text-transform: capitalize;
         font-size: 15px;
@@ -608,15 +538,6 @@ footer a {
         margin-bottom: 15px;
         
     }
-
-    /* nav ul li {
-        list-style-type: none;
-        text-align: center;
-        margin-bottom: 10px;
-        flex-grow: 1;
-        flex-basis: 50px;
-    } */
-
     header div {
         margin-top: 100px;
         margin-left: 0;
@@ -629,7 +550,6 @@ footer a {
         letter-spacing: 2px;
         text-align: center;
         font-size: 30px;
-        /* font-weight: bold; */
     }
 
     header div p {
@@ -653,7 +573,6 @@ footer a {
         width: 100%;
         display: flex;
         flex-direction: column;
-        /* margin-left: 30px; */
         justify-content: center;
     }
 
@@ -667,16 +586,12 @@ footer a {
         margin-bottom: 15px;
         align-items: center;
     }
-
-    /* header div button a{
-        padding: 0;
-    } */
     .description aside {
         display: flex;
         flex-direction: column;
-        /* border: 1px solid; */
         width: auto;
         margin-top: 15px;
+        position: relative;
         margin-left: 20px;
         padding-left: 0;
     }
@@ -689,25 +604,18 @@ footer a {
         margin: 0px 0px;
         padding-top: 10px;
     }
-
-    /* aside div p {
-    color: black;
-    text-align: left;
-    font-size: 30px;
-    margin: 10px 70px;
-    text-align: center;
-} */
     .services-card {
-        flex-grow: 1;
-        flex-basis: 100;
+        display: flex;
         flex-wrap: wrap;
-        width: 80%;
+        width: 100%;
+        gap: 10px;
     }
 
     .services-card .card {
-        /* display: flex; */
         flex-direction: column;
         margin-bottom: 20px;
+        flex-grow: 1; 
+        flex-basis: 200px;
     }
 
     .contact {
@@ -721,7 +629,6 @@ footer a {
 
     .contact button {
         border-radius: 5px;
-        /* border: 0.5px solid blue; */
         background-color: dodgerblue;
         width: 100%;
         padding: 5px;
@@ -746,22 +653,45 @@ footer a {
     }
 
     .container div {
-        /* display: flex; */
         flex-direction: column;
     }
 
 
 }
 
-/* @keyframes aside {
-    0%{
-        transform: translatex(300px);
-       visibility: hidden;
-       display: none;
+@keyframes nav {
+    to{
+        opacity: 1;
     }
-    100%{
+    from{
+        opacity: 0;
+    }
+}
+@keyframes lien {
+    to{
+        transform: translateY(0);
+    }
+    from{
+        transform: translateY(-100px);
+
+    }
+}
+@keyframes button {
+    to{
         transform: translateX(0);
-        visibility: visible;
-        overflow: hidden;
     }
-} */
+    from{
+        transform: translateX(200px);
+
+    }
+}
+@keyframes services {
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    0%{
+        opacity: 0;
+        transform: translateX(800px);
+    }
+}

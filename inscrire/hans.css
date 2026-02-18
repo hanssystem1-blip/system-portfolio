@@ -40,6 +40,7 @@ body{
     margin: 30px 0;
     width: 350px;
     border-bottom: 0.7px solid gray;
+    display: flex;
 } 
 input[type="text"],input[type="Email"]{
     font-size: 25px;
@@ -88,4 +89,9 @@ input::placeholder{
 .group a:hover{
     text-decoration: underline;
 
+}
+ion-icon{
+    color: #fff;
+    font-size: 30px;
+    text-align: right;
 }
