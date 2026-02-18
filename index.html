@@ -20,8 +20,8 @@
             <img class="logo" src="img/logo.jpg" alt="">
         </div>
         <div>
-                <ion-icon name="sunny" id="change" class="dark"></ion-icon>
-            </div>
+            <ion-icon name="sunny" id="change" class="dark"></ion-icon>
+        </div>
         <div>
             <ul>
                 <li>
@@ -41,18 +41,18 @@
         <!-- onclick="document.body.classList.toggle('dark') -->
         <div class="option">
 
-            
+
             <button>
                 <ion-icon name="person-add"></ion-icon>
-                <a href="./inscrire/hanns.html"target="_blank">s'inscrire</a>
+                <a href="./inscrire/hanns.html" target="_blank">s'inscrire</a>
             </button>
-            <button>
-                <ion-icon name="power" class="conn"></ion-icon>
-                <a href="">connexion</a></button>
+            <!-- <button>
+                <ion-icon name="power"  class="conn"></ion-icon>
+                <a href="">connexion</a></button> -->
 
         </div>
     </nav><br><br>
-    <header id="home">
+    <header>
         <div>
             <h1>
                 Transformer <span>vos idees</span> en experiences digitales <span>inoubliables</span>
@@ -63,9 +63,9 @@
             </p>
         </div>
         <div class="btn">
-            <button class="header-contact"> <a href="#">voir plus</a></button>
+            <button class="header-contact"> <a href="#projets">voir plus</a></button>
             <button> <a href="https://wa.me/237674965999 " target="_blank"><ion-icon name="call"
-                                    class="call"></ion-icon>Contacter</a></button>
+                        class="call"></ion-icon>Contacter</a></button>
         </div>
     </header>
     <!-- <div class="etoile">
@@ -123,27 +123,51 @@
             <div>
                 <!-- <span>1️⃣</span> -->
                 <h3>AUTHENTIFICATION OTP</h3>
-                <p>Assurer votre securite en ligne grace un systeme d'authentification basé sur mot de passe a usage unique dans le but de renforcer les connexion utilisateurs</p>
+                <p>Assurer votre securite en ligne grace un systeme d'authentification basé sur mot de passe a usage
+                    unique dans le but de renforcer les connexion utilisateurs</p>
                 <img src="img/otp.png" alt=""><ion-icon name="eye"></ion-icon>
             </div>
             <div>
                 <!-- <span>2️⃣</span> -->
                 <h3>SITE VITRINE</h3>
                 <p>Conception et deveveloppement d'un site virine proffesionnel
-                    mettant en avant les services, produits et information essentielles afin d'ameliorer la visibilite en ligne.
+                    mettant en avant les services, produits et information essentielles afin d'ameliorer la visibilite
+                    en ligne.
                 </p>
                 <img src="img/vitrine.png" alt=""><ion-icon name="eye"></ion-icon>
             </div>
             <div>
                 <!-- <span>3️⃣</span> -->
                 <h3>SERVICE DE CONSULTATION MEDICALE</h3>
-                <p>Plate-forme facilitant l'acces au information medicale,la prise de rendez-vous et la communication entre patient et personnel medical</p>
+                <p>Plate-forme facilitant l'acces au information medicale,la prise de rendez-vous et la communication
+                    entre patient et </p>
+                <img src="img/medecine.png" alt=""><ion-icon name="eye"></ion-icon>
+            </div>
+            <div>
+                <!-- <span>3️⃣</span> -->
+                <h3>GESTION DE NOTES D'UN ETABLISSEMENT</h3>
+                <p>Plate-forme facilitant l'acces au information medicale,la prise de rendez-vous et la communication
+                    entre patient et personnel medical</p>
+                <img src="img/medecine.png" alt=""><ion-icon name="eye"></ion-icon>
+            </div>
+            <div>
+                <!-- <span>3️⃣</span> -->
+                <h3>GESTION D'UNE BIBLIOTHEQUE</h3>
+                <p>Plate-forme facilitant l'acces au information medicale,la prise de rendez-vous et la communication
+                    entre patient et personnel medical</p>
+                <img src="img/medecine.png" alt=""><ion-icon name="eye"></ion-icon>
+            </div>
+            <div>
+                <!-- <span>3️⃣</span> -->
+                <h3>GESTION DES STAGIAIRE</h3>
+                <p>Plate-forme facilitant l'acces au information medicale,la prise de rendez-vous et la communication
+                    entre patient et personnel medical</p>
                 <img src="img/medecine.png" alt=""><ion-icon name="eye"></ion-icon>
             </div>
         </div>
     </section>
     <section id="about">
-        <h1>A Propos de Moi!!</h1>
+        <h1>About Me</h1>
         <div class="description">
             <aside>
                 <div class="perso">
@@ -171,15 +195,31 @@
                     </div>
             </aside>
         </div>
-    </section><br><br><br>
+    </section>
+    <section class="newlester">
+        <div>
+            <form action="traitement.php" method="post">
+                <h2> newlester</h2>
+                <input type="email" name="" placeholder="email : hanssystem@gmail.com" autocomplete="url" id=""><br>
+                <a href="">
+                    <button type="button">
+                    <ion-icon name="person-add"></ion-icon>s'inscrire
+                </button>
+                </a>
+            </form>
+        </div>
+    </section>
     <footer>
         &copy;copyright 2026 | tout droit reservé <br><br><br>
         <span>by SyStem</span>
-        <a href="https://www.linkedin.com" target="_blank"><ion-icon class="icon" name="logo-linkedin"></ion-icon></a>
-        <a href="https://github.com/hanssystem1-blip" target="_blank"><ion-icon class="icon"
+        <a href="https://www.linkedin.com" target="_blank"><ion-icon class="icon" id="icon"
+                name="logo-linkedin"></ion-icon></a>
+        <a href="https://github.com/hanssystem1-blip" target="_blank"><ion-icon id="icon" class="icon"
                 name="logo-github"></ion-icon></a>
-        <a href="https://www.whatsapp.com" target="_blank"><ion-icon class="icon" name="logo-whatsapp"></ion-icon></a>
-        <a href="https://www.wordpress.com" target="_blank"><ion-icon class="icon" name="logo-wordpress"></ion-icon></a>
+        <a href="https://www.whatsapp.com" target="_blank"><ion-icon id="icon" class="icon"
+                name="logo-whatsapp"></ion-icon></a>
+        <a href="https://www.wordpress.com" target="_blank"><ion-icon id="icon" class="icon"
+                name="logo-wordpress"></ion-icon></a>
 
 
     </footer>
