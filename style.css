@@ -709,8 +709,6 @@ footer a {
          flex-grow: 1;
         flex-basis: 100;
     }
-
-
     .newlester{
     background-image: url("./img/newlester.png");
     background-attachment: fixed;
