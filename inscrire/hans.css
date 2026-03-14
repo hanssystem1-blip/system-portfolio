@@ -96,6 +96,7 @@ textarea{
     outline: none;
     padding: 5px;
     overflow-y: auto;
+    resize: none;
 }
 textarea::placeholder{
     color: #fff;
