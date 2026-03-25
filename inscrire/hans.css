@@ -1,9 +1,9 @@
-*{
+/* *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+} */
 body{
    background-color: rgb(0, 30, 60);
 }
@@ -17,18 +17,11 @@ body{
     position: relative;
     width: 500px;
     height: 550px;
-    /* border: 2px solid white; */
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
-     /* background: url("inscription.png") no-repeat; */
-    /* background-position: right ;
-    background-attachment: fixed;
-    background-size: cover; */
-    /* min-height: 100vh; */
-    /* width: 100%; */
 }
 .formul-box h2{
     color: #fff;
@@ -41,6 +34,8 @@ body{
     width: 350px;
     border-bottom: 0.7px solid gray;
     display: flex;
+    align-items: center;
+
 } 
 input[type="text"],input[type="Email"]{
     font-size: 25px;
@@ -83,15 +78,28 @@ input::placeholder{
 .group span a{
     color: #fff;
     position: relative;
-    /* top: 10px; */
     text-decoration: none;
 } 
 .group a:hover{
     text-decoration: underline;
-
 }
 ion-icon{
-    color: #fff;
+    color: rgb(254, 253, 253);
     font-size: 30px;
     text-align: right;
+}
+textarea{
+    background-color: transparent;
+    color: #fff;
+    font-size: 20px;
+    border: 0px solid gray;
+    outline: none;
+    padding: 5px;
+    overflow-y: auto;
+    resize: none;
+}
+textarea::placeholder{
+    color: #fff;
+    opacity: 0.6;
+    font-size: 20px;
 }
