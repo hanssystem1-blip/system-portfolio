@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +9,7 @@
     <link rel="icon" type="image/png" href="img/icone.jpeg">
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </head>
+
 <body>
     <nav>
         <div class="menu">
@@ -37,18 +37,13 @@
                 </li>
             </ul>
         </div>
-        <!-- onclick="document.body.classList.toggle('dark') -->
         <div class="option">
 
 
             <button>
                 <ion-icon name="person-add"></ion-icon>
-                <a href="./inscrire/hanns.html" target="_blank">s'inscrire</a>
+                <a href="./inscrire/hanns.html" target="_blank">faire une demande</a>
             </button>
-            <!-- <button>
-                <ion-icon name="power"  class="conn"></ion-icon>
-                <a href="">connexion</a></button> -->
-
         </div>
     </nav><br><br>
     <header id="home">
@@ -66,9 +61,9 @@
             <button> <a href="https://wa.me/237674965999 " target="_blank"><ion-icon name="call"
                         class="call"></ion-icon>Contacter</a></button>
         </div>
-    </header  >
+    </header>
     <section id="services">
-        <h1>Nos Services Digitale.</h1>
+        <h1> Services Digitale.</h1>
         <div class="services-card">
             <div class="card">
                 <img src="img/uidesign.png" alt="" alt="">
@@ -79,7 +74,7 @@
                     <span>maintenance et optimisation de sites</span>
                     <ion-icon name="checkbox-outline"></ion-icon> correction des bugs
                 </p>
-                <a href="inscrire/hanns.html" target="_blank"><input type="button" value="recommander " ></a>
+                <a href="inscrire/hanns.html" target="_blank"><input type="button" value="recommander "></a>
             </div>
             <div class="card">
                 <img src="img/sgbd.png" alt="" alt="">
@@ -88,7 +83,7 @@
                     <ion-icon name="checkbox-outline"></ion-icon> creation de base de donnees(MySQL,MongoDB) <br>
                     <ion-icon name="checkbox-outline"></ion-icon> stokage,gestion et optimisation des donnees
                 </p>
-                <a href="inscrire/hanns.html" target="_blank"><input type="button" value="recommander " ></a>
+                <a href="inscrire/hanns.html" target="_blank"><input type="button" value="recommander "></a>
             </div>
             <div class="card">
                 <img src="img/api.png" alt="" alt="">
@@ -97,7 +92,7 @@
                     <ion-icon name="checkbox-outline"></ion-icon> connexion a des services externes <br>
                     <ion-icon name="checkbox-outline"></ion-icon> integration de paiements en ligne,reseaux
                 </p>
-                <a href="inscrire/hanns.html" target="_blank"><input type="button" value="recommander " ></a>
+                <a href="inscrire/hanns.html" target="_blank"><input type="button" value="recommander "></a>
             </div>
             <div class="card">
                 <img src="img/deploy.png" alt="" alt="">
@@ -106,13 +101,13 @@
                     <ion-icon name="checkbox-outline"></ion-icon> outils specifique pour automatisation <br><br>
 
                 </p>
-                <a href="inscrire/hanns.html" target="_blank"><input type="button" value="recommander " ></a>
+                <a href="inscrire/hanns.html" target="_blank"><input type="button" value="recommander "></a>
             </div>
         </div>
 
     </section>
     <section id="projets">
-        <h1>Nos projets realisés.</h1>
+        <h1> Projets Realisés.</h1>
         <div class="container">
             <div>
                 <h3>AUTHENTIFICATION OTP</h3>
@@ -171,7 +166,8 @@
                     </p>
                     <div class="contact">
                         <button>
-                            <a href="https://wa.me/237674965999 " target="_blank"><ion-icon name="call" class="call"></ion-icon>Contacter</a>
+                            <a href="https://wa.me/237674965999 " target="_blank"><ion-icon name="call"
+                                    class="call"></ion-icon>Contacter</a>
                         </button>
                         <button>
                             <!-- <ion-icon name="person-add"></ion-icon> -->
@@ -184,20 +180,28 @@
     <section class="newlester">
         <div>
             <form action="traitement.php" method="post">
-                <h2> newlester</h2>
-                <input type="email" name="" placeholder="email : hanssystem@gmail.com" autocomplete="url" id=""><br>
-                <a href="">
-                    <button type="button">
-                    <ion-icon name="person-add"></ion-icon>s'inscrire
-                </button>
-                </a>
+
+                <img src="./img/newlester.png" alt="">
+
+                <div>
+                    <h2> newlester</h2>
+                    <input type="email" name="" placeholder="email : hanssystem@gmail.com" autocomplete="off" id=""><br>
+                    <a href="">
+                        <button type="button">
+                            <ion-icon name="person-add"></ion-icon>s'inscrire
+                        </button>
+                    </a>
+                </div>
             </form>
         </div>
     </section>
     <footer>
-        &copy;copyright 2026 | tout droit reservé <br><br><br>
+        <div>
+           <p> &copy;copyright 2026 | tout droit reservé </p>
         <span>by SyStem</span>
-        <a href="https://www.linkedin.com" target="_blank"><ion-icon class="icon" id="icon"
+        </div>
+        <div>
+            <a href="https://www.linkedin.com" target="_blank"><ion-icon class="icon" id="icon"
                 name="logo-linkedin"></ion-icon></a>
         <a href="https://github.com/hanssystem1-blip" target="_blank"><ion-icon id="icon" class="icon"
                 name="logo-github"></ion-icon></a>
@@ -205,8 +209,9 @@
                 name="logo-whatsapp"></ion-icon></a>
         <a href="https://www.wordpress.com" target="_blank"><ion-icon id="icon" class="icon"
                 name="logo-wordpress"></ion-icon></a>
+        </div>
     </footer>
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>

@@ -11,7 +11,7 @@
 html {
     overflow-x: hidden;
     scroll-behavior: smooth;
-    scroll-padding-top: 8.5rem;
+    /* scroll-padding-top: 8.5rem; */
 }
 
 html::-webkit-scrollbar {
@@ -46,7 +46,7 @@ body {
 .logo {
     height: 60px;
     width: auto;
-    margin-left: 20px;
+    padding-left: 10px;
 }
 
 .dark {
@@ -97,9 +97,10 @@ nav ul li a {
     text-decoration: none;
     padding-bottom: 5px;
     text-transform: capitalize;
-    color: black;
+    color: rgb(46, 46, 46);
+    font-weight: 700;
     cursor: pointer;
-    font-size: 30px;
+    font-size: clamp(15px,5vw,25px);
 }
 
 nav div button a {
@@ -245,7 +246,7 @@ header .btn button:hover {
     transition: all 700ms ease-in-out;
 }
 
-aside div img,
+
 section img {
     height: 200px;
     width: auto;
@@ -263,10 +264,11 @@ section .services-card {
     gap: 20px;
     animation: services 2s ease;
     animation-timeline: view();
-    animation-range-start: cover 0% ;
-    animation-range-end: contain 100% ;
+    animation-range-start: cover 0%;
+    animation-range-end: contain 100%;
 
 }
+
 section .services-card .card {
     display: flex;
     flex-direction: column;
@@ -332,9 +334,10 @@ input[type="button"] {
 
 input[type="button"]:hover {
     background-color: rgba(62, 158, 255, 1);
-    
+
     border: none;
 }
+
 .card p span {
     text-transform: uppercase;
     font-weight: 600;
@@ -354,7 +357,8 @@ input[type="button"]:hover {
     margin-left: 15em;
     text-align: center;
     border-radius: 5px;
-    padding: 20px;
+    padding: 50px;
+    padding-bottom: 40px;
     box-shadow: 0.3px 0.3px 2px rgba(175, 175, 175, 0.3);
     max-height: auto;
     border: none;
@@ -406,23 +410,23 @@ img {
     justify-content: space-evenly;
     width: 80%;
 }
-
+.container div:hover{
+transform: scale(1.02);
+transition: transform 300ms ease;
+cursor: default;
+}
 .container div ion-icon {
     padding-top: 30px;
     position: relative;
     font-size: 40px;
     color: #2563EB;
-    opacity: 0.7;
-}
-
-.container div ion-icon:hover {
-    transform: scale(1.5, 1.5);
-
+    /* opacity: 0.7; */
 }
 .projet {
-    background-color: rgba(14, 13, 13,0.9);
+    background-color: rgba(14, 13, 13, 0.9);
 
 }
+
 .container {
     background-color: rgba(175, 175, 175, 0.2);
     width: 100%;
@@ -450,27 +454,22 @@ img {
     width: 100%;
 
 }
-
-.container img:hover {
-    transform: scale(1.1, 1.1);
-}
-
 /* newlester */
-
 .newlester {
-    background-image: url("./img/newlester.png");
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 60vh;
     width: 100%;
+    height: 80vh;
 }
 
-.newlester div {
-    flex-direction: column;
-    padding-top: 60px;
-    width: 50%;
+form img {
+    /* max-width: fit-content; */
+    width: 100%;
+    z-index: 10;
+    height: 75vh;
+}
+
+form div {
+    width: 60%;
+    top: -20em;
     float: right;
     position: relative;
 }
@@ -483,7 +482,7 @@ img {
 
 .newlester form {
     text-align: center;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .newlester form button {
@@ -519,20 +518,20 @@ img {
 /* petit bas de page simple */
 
 footer {
+    width: 100%;
     background-color: rgb(155, 159, 189);
+    display: flex;
+    justify-content: center;
     align-items: center;
+    gap: 10px;
+    flex-direction: column;
     text-align: center;
     padding-top: 50px;
-    justify-content: center;
     border-top: 2px solid rgba(62, 158, 255, 0.9);
     font-weight: 400;
     font-size: 18px;
+    padding-bottom: 20px;
 }
-
-.conn {
-    color: red;
-}
-
 footer a {
     color: #000;
     margin-left: 10px;
@@ -548,13 +547,15 @@ footer a {
         display: block;
         width: auto;
         float: right;
-        padding: 0 10px;
+        padding: 0px;
     }
 
     .burger {
         cursor: pointer;
         color: #000;
         font-size: 30px;
+        padding: 20px;
+
     }
 
     nav div ul {
@@ -579,13 +580,10 @@ footer a {
         text-align: center;
     }
 
-    .logo {
-        display: block;
-    }
 
     .present li a {
         padding-right: 10px;
-        margin: 0px 10px;
+        /* margin: 0px 10px; */
         font-size: 20px;
     }
 
@@ -615,7 +613,7 @@ footer a {
         font-size: 15px;
         position: absolute;
         top: 3em;
-        left: 7em;
+        left: 6em;
     }
 
     .option button {
@@ -716,9 +714,9 @@ footer a {
         flex-grow: 0.5;
         flex-basis: 200;
         animation: services 2s linear;
-    animation-timeline: view();
-    animation-range-start: cover 0% ;
-    animation-range-end: contain 100% ;
+        animation-timeline: view();
+        animation-range-start: cover 0%;
+        animation-range-end: contain 100%;
     }
 
     .contact {
@@ -728,7 +726,7 @@ footer a {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        
+
     }
 
     .contact button {
@@ -755,82 +753,63 @@ footer a {
         flex-basis: 100;
     }
 
+
     .newlester {
-        background-image: url("./img/newlester.png");
-        background-attachment: fixed;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 40vh;
         width: 100%;
+        height: 100vh;
     }
 
-    .newlester div {
-        flex-direction: column;
-        padding-top: 50px;
+    form img {
         width: 100%;
+        height: 60vh;
+    }
 
-        /* float: right; */
+    form div {
+        width: 60%;
+        top: -15em;
+        float: right;
         position: relative;
     }
 
     .newlester h2 {
-        font-size: 25px;
-        margin-bottom: 20px;
+        font-size: 40px;
+        margin-bottom: 30px;
         text-transform: capitalize;
-    }
-
-    .newlester form {
-        text-align: center;
-        align-items: center;
-        justify-content: center;
     }
 
     .newlester form button {
         text-decoration: none;
-        width: 60%;
-        background-color: rgba(62, 158, 255, 1);
-
+        width: 100%;
+        background-color: rgba(62, 158, 255, 0.5);
         font-weight: 600;
-        font-size: 15px;
-        /* padding: 5px; */
-        border-radius: 50px;
+        font-size: 12px;
+        padding: 5px;
+        border-radius: 8px;
         border: none;
         cursor: pointer;
-        line-height: 20px;
+        line-height: 10px;
     }
 
     .newlester form button:hover {
-        background-color: rgba(62, 158, 255, 0.6);
+        background-color: rgba(62, 158, 255, 1);
 
     }
 
     .newlester input {
-        line-height: 10px;
-        /* border-radius: 10px; */
-        padding: 5px 15px;
-        margin-bottom: 20px;
+        line-height: 15px;
+        border-radius: 8px;
+        margin-bottom: 10px;
         outline: none;
-        font-size: 15px;
+        font-size: 12px;
+        padding: 5px;
         border: none;
         width: 80%;
     }
-    @keyframes services {
-    from {
-
-        transform: scale(0.9, 0.9);
-
-    }
-
-    to {
-        transform: scale(1, 1);
-
-    }
-}
 
 }
 
-@keyframes nav {
+
+@keyframes lien {
     to {
         opacity: 1;
     }
@@ -839,18 +818,6 @@ footer a {
         opacity: 0;
     }
 }
-
-@keyframes lien {
-    to {
-        transform: translateY(0);
-    }
-
-    from {
-        transform: translateY(-100px);
-
-    }
-}
-
 @keyframes button {
     to {
         transform: translateX(0);
@@ -858,7 +825,6 @@ footer a {
 
     from {
         transform: translateX(200px);
-
     }
 }
 
