@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>system--00</title>
     <link rel="stylesheet" href="./style.css">
-
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="icon" type="image/png" href="img/icone.jpeg">
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </head>
@@ -48,17 +52,17 @@
         </div>
     </nav><br><br>
     <header id="home">
-        <div>
-            <h1>
+        <div class="animate__animated animate__fadeInUp">
+            <h1 class="animate__animated animate__fadeInUp">
                 Transformer <span>vos idees</span> en experiences digitales <span>inoubliables</span>
             </h1>
-            <p>
+            <p class="animate__animated animate__fadeInUp">
                 la techonologie de nos jours represente l'un des domaines les plus accessibles
                 et requiert une expertise dans le domaine choisir.
             </p>
         </div>
-        <div class="btn">
-            <button class="header-contact"> <a href="#projets">voir plus</a></button>
+        <div class="btn header-contact animate__animated animate__bounceInUp">
+            <button class="header-contact "> <a href="#projets">voir plus</a></button>
             <button> <a href="https://wa.me/237674965999 " target="_blank"><ion-icon name="call"
                         class="call"></ion-icon>Contacter</a></button>
         </div>
@@ -107,16 +111,16 @@
         </div>
 
     </section>
-    <section id="projets">
+    <section id="projets" >
         <h1> Projets Realisés.</h1>
         <div class="container">
-            <div>
+            <div data-aos="fade-down">
                 <h3>AUTHENTIFICATION OTP</h3>
                 <p>Assurer votre securite en ligne grace un systeme d'authentification basé sur mot de passe a usage
                     unique dans le but de renforcer les connexion utilisateurs</p>
                 <img src="img/otp.png" alt=""><ion-icon name="eye"></ion-icon>
             </div>
-            <div>
+            <div data-aos="fade-down">
                 <h3>SITE VITRINE</h3>
                 <p>Conception et deveveloppement d'un site virine proffesionnel
                     mettant en avant les services, produits et information essentielles afin d'ameliorer la visibilite
@@ -124,25 +128,25 @@
                 </p>
                 <img src="img/vitrine.png" alt=""><ion-icon name="eye"></ion-icon>
             </div>
-            <div>
+            <div data-aos="fade-down">
                 <h3>SERVICE DE CONSULTATION MEDICALE</h3>
                 <p>Plate-forme facilitant l'acces au information medicale,la prise de rendez-vous et la communication
                     entre patient et </p>
                 <img src="img/medecine.png" alt=""><ion-icon name="eye"></ion-icon>
             </div>
-            <div>
+            <div data-aos="fade-down">
                 <h3>GESTION DE NOTES D'UN ETABLISSEMENT</h3>
                 <p>Plate-forme facilitant l'acces au information medicale,la prise de rendez-vous et la communication
                     entre patient et personnel medical</p>
                 <img src="img/medecine.png" alt=""><ion-icon name="eye"></ion-icon>
             </div>
-            <div>
+            <div data-aos="fade-down">
                 <h3>GESTION D'UNE BIBLIOTHEQUE</h3>
                 <p>Plate-forme facilitant l'acces au information medicale,la prise de rendez-vous et la communication
                     entre patient et personnel medical</p>
                 <img src="img/medecine.png" alt=""><ion-icon name="eye"></ion-icon>
             </div>
-            <div>
+            <div data-aos="fade-down">
                 <h3>GESTION DES STAGIAIRE</h3>
                 <p>Plate-forme facilitant l'acces au information medicale,la prise de rendez-vous et la communication
                     entre patient et personnel medical</p>
@@ -152,7 +156,7 @@
     </section>
     <section id="about">
         <h1>About Me</h1>
-        <div class="description">
+        <div class="description" data-aos="zoom-in" >
             <aside>
                 <div class="perso">
                     <img src="img/hans.jpg" alt="">
@@ -214,6 +218,10 @@
     </footer>
      <!-- <script src="node_modules/jquery/dist/jquery.min.js"></script> -->
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 
 </html>

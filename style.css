@@ -832,17 +832,6 @@ footer a {
         transform: translateX(200px);
     }
 }
-@keyframes fadeup {
-    from {
-        transform: translatey(50px);
-        opacity: 0;
-    }
-
-    to {
-        transform: translatey(0px);
-        opacity: 1;
-    }
-}
 
 @keyframes services {
     from {
