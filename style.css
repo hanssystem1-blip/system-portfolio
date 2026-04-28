@@ -459,20 +459,32 @@ cursor: default;
 /* newlester */
 .newlester {
     width: 100%;
+<<<<<<< HEAD
     height: 30vh;
     margin-bottom: 0;
+=======
+    height: 80vh;
+>>>>>>> 24bc34461c5ff02134f506697ceb4411d8d7fd18
 }
 
 form img {
     /* max-width: fit-content; */
     width: 100%;
     z-index: 10;
+<<<<<<< HEAD
     height: 50vh;
+=======
+    height: 75vh;
+>>>>>>> 24bc34461c5ff02134f506697ceb4411d8d7fd18
 }
 
 form div {
     width: 60%;
+<<<<<<< HEAD
     top: -15em;
+=======
+    top: -20em;
+>>>>>>> 24bc34461c5ff02134f506697ceb4411d8d7fd18
     float: right;
     position: relative;
 }
@@ -485,7 +497,10 @@ form div {
 
 .newlester form {
     text-align: center;
+<<<<<<< HEAD
     margin-bottom: 0px;
+=======
+>>>>>>> 24bc34461c5ff02134f506697ceb4411d8d7fd18
     /* align-items: center; */
 }
 
@@ -527,7 +542,10 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+<<<<<<< HEAD
     margin-top: 0px;
+=======
+>>>>>>> 24bc34461c5ff02134f506697ceb4411d8d7fd18
     gap: 10px;
     flex-direction: column;
     text-align: center;
@@ -535,7 +553,11 @@ footer {
     border-top: 2px solid rgba(62, 158, 255, 0.9);
     font-weight: 400;
     font-size: 18px;
+<<<<<<< HEAD
     padding-bottom: 10px;
+=======
+    padding-bottom: 20px;
+>>>>>>> 24bc34461c5ff02134f506697ceb4411d8d7fd18
 }
 footer a {
     color: #000;
